@@ -23,7 +23,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '1.00';
 
 # Preloaded methods go here.
 
@@ -42,22 +42,20 @@ __END__
 
 =head1 NAME
 
-Lingua::FA::Number - Returns the Persian (Farsi) HTML/Unicode equivalent of numbers
+Lingua::FA::Number - Converts English numbers to their Persian (Farsi) HTML/Unicode equivalent
 
 =head1 SYNOPSIS
 
   use Lingua::FA::Number;
-  my $s1 = new Lingua::FA::Number ("1 2 3 4");
-  
-  print $s1->string();
+  print Lingua::FA::Number::convert ("1 2 3 4");
 
 =head1 ABSTRACT
 
-  This module returns the Persian (Farsi) HTML/Unicode equivalent of numbers
+  This module converts the English numbers to their Persian (Farsi) HTML/Unicode equivalent
 
 =head1 DESCRIPTION
 
-  Converts all occurences of numbers in a string to their Persian (Farsi) HTML/unicode equivalents 
+  Converts all occurences of numbers in a string to their Persian (Farsi) HTML/unicode equivalents
 
   HTML portion is done for now.
 
